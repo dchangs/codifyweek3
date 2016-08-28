@@ -9,6 +9,8 @@ body {
 	font-family: 'Crimson text', sans-serif;
 }
 
+
+
 /* top navigation */
 
 nav {
@@ -64,14 +66,13 @@ header p {
 	clear: both;
 	text-align: center;
 	margin: 40px auto;
-	width: 825px;
+	width: 100%;
+	margin: 0 auto;
 	padding-bottom: 50px;
-	height: 250px;
 }
 
 .features div {
 	display: inline-block;
-	float: left;
 	height: 211px;
 	border: 1px solid #e8e8e8;
 	text-align: center;
@@ -113,15 +114,20 @@ hr {
 	clear: both;
 	display: block;
 	height: 12px;
+	margin: 20px;
 }
 
 /* customers */
 .customers {
 	text-align: center;
-	width: 825px;
+	width: 100%;
 	font-family: 'Crimson text', serif;
 	position: relative;
 	margin: 30px auto;
+}
+
+.customers p {
+	margin: 0 10px;
 }
 
 .customers h1 {
@@ -176,12 +182,16 @@ hr {
 	margin-bottom: 20px;
 }
 
+.brands img {
+	width: 100%;
+}
+
 /* work with us */
 
 #business {
 	display: block;
 	margin: 30px auto;
-	width: 825px;
+	width: 100%;
 }
 
 #business h1 {
@@ -198,7 +208,6 @@ hr {
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	line-height: 27px;
-	height: 385px;
 	width: 45%;
 }
 
@@ -235,7 +244,7 @@ hr {
 /* rework book */
 
 .rework {
-	width: 90%
+	width: 90%;
 }
 
 .rework h1 {
@@ -249,11 +258,16 @@ hr {
 	float: left;
 }
 
+.quotes {
+	margin: 0 auto;
+}
+
 .quotes div {
 	color: #888;
 	font-size: 22px;
 	font-family: "CrimsonRomanItalic", serif;
 	font-style: italic;
+	margin: 0 10px;
 	margin-top: 35px;
 	margin-bottom: 10px;
 }
@@ -284,11 +298,15 @@ hr {
 
 /* offerings */
 
+.offerings {
+	width: 100%;
+}
+
 .offerings h1 {
 	font-size: 48px;
 	line-height: 52px;
 	letter-spacing: -1px;
-	margin: 20px 0px;
+	margin: 20px 10px;
 }
 
 .offerings h2 {
@@ -318,7 +336,6 @@ hr {
 
 .columnone, .columntwo {
 	float: left;
-	height: 385px;
 	line-height: 27px;
 	margin-left: 7%;
 	width: 37%;
@@ -363,3 +380,131 @@ footer {
 	font-family: sans-serif;
 	font-size: 12px;
 }
+
+@media (max-width: 900px) {
+	.meet, .arrowleft, .arrowright, .paper {
+		display: none;
+	}
+}
+
+@media (max-width: 845px) {
+	.section {
+		width: 80%;
+	}
+	h1 {
+		font-size: 34px;
+	}
+
+	.features div {
+		float: left;
+	}
+}
+
+@media (max-width: 760px) {
+	.features div {
+		display: block;
+		clear: both;
+		float: none;
+		margin: 20px auto;
+		width: 50%;
+	}
+
+	#business {
+		text-align: center;
+	}
+
+	#business .columnleft, #business .columnright {
+		display: block;
+		clear: both;
+		float: none;
+		text-align: center;
+		margin: 5px auto;
+		width: 60%;
+	}
+
+	div.item {
+		height: 100%;
+	}
+
+	footer p, footer a {
+		display: block;
+	}
+
+	.head h1, .customers h1, #business h1, .rework h1, .offerings h1 {
+		font-size: 34px;
+		margin: 7%;
+	}
+}
+
+@media (max-width: 680px) {
+	.book img {
+		display: none;
+	}
+}
+
+@media (max-width: 566px) {
+	#business .columnleft, #business .columnright {
+		width: 90%;
+	}
+
+	#business p {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 542px) {
+	nav ul {
+		float: none;
+		margin: 20px auto;
+		display: block;
+	}
+
+	nav li {
+		display: inline-block;
+		margin: 5px;
+	}	
+}
+
+@media (max-width: 425px) {
+	.signin {
+		text-align: center;
+		width: 90%;
+		margin: 10px auto;
+	}
+
+	.signin a {
+		display: block;
+		clear: both;
+		font-size: 14px;
+		border: 1px solid #18afe0;
+		border-radius: 5px;
+		padding: 5px 20px;
+		width: 90%;
+	}
+
+	.signin a:hover {
+		cursor: pointer;
+		background-color: #18afe0;
+		color: #fff;
+	}
+
+	.countries img {
+		display: none;
+	}
+
+	.offerings div {
+		float: none;
+		display: block;
+		clear: both;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+}
+
+
+
+
+
+
+
